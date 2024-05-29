@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>첫번째 제목</h1>
+    <p>즐거운 웹 프로그래밍 입문</p> <!-- 패러그랩 : 문장 입력 -->
+
+    <div> <!-- div : 그룹핑의 의미 화면상에 변화는 없다. -->
+        <h1>두번째 제목</h1>
+        <p>정말 즐거운가요?</p>
+        <img src="./testimg.jpg" width="300" height="300"> <!-- img 태그 -->
+    </div>
+
+    <p>
+        ABC|<b>Lorem</b><br>
+        ABC|<strong>ABC|dolor</strong><br>
+        ABC|<em>amet</em><br>
+        ABC|<mark>Asperiores</mark><br>
+        ABC|<u>nesciunt</u><br> 
+        ABC|<strike>delectus</strike><br>
+        <hr>
+        ABC|<small>quidem</small><br> 
+        ABC|<sub>deleniti</sub><br> 
+        ABC|<sup>odit</sup><br> 
+    </p>
+    <p>&lt; &gt; &amp; &copy; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &plusmn;
+
+    <p>&lt;가장 중요한 태그인 a&gt;</p>
+    <a href="https://www.naver.com/" target ="_self">네이버</a><br>
+    <a href="mailto:personar95@naver.com">메일 보내기</a>
+    
+    <div> <!-- 순번 없는 목록 -->
+        <ul>
+            <p>&lt;순번 없는 목록&gt;</p>
+            <li>복숭아</li>
+            <li>사과</li>
+            <li>바나나</li>
+        </ul>
+    </div>
+    <div> <!-- 순번 있는 목록 -->
+        <ol>
+            <p>&lt;순번 있는 목록&gt;</p>
+            <li>봄</li>
+            <li>여름</li>
+            <li>가을</li>
+            <li>겨울</li>
+        </ol>
+    </div>
+    <!-- 테이블 -->
+    <table border="1"> <!-- 테이블의 속성을 지정 (border="1") -->
+        <caption>
+            <strong>제목</strong>
+        </caption>
+        <tr>
+            <th>1번셀</th>
+            <th>2번셀</th>
+            <th>3번셀</th>
+            <th>4번셀</th>
+        </tr>
+        <tr>
+            <td>가</td>
+            <td>나</td>
+            <td colspan="2">다</td> <!-- 가로 두 칸을 병합-->
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>40</td>
+            <td>70</td>
+            <td rowspan="2">100</td> <!-- 위, 아래 두 칸을 병합 -->
+        </tr>
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+        </tr>
+    </table>
+    <audio controls>
+        <source src="./sample.mp3">
+    </audio><br>
+
+    <video controls width="500">
+        <source src = "./sample.mp4">
+    </video><br>
+
+    <object type ="application/pdf"
+        data="./sample.pdf"
+        width="250" height="380" />
+
+    <embed type="video" src="./sample.mp4" width="350" Height="250"
+</body>
+</html>

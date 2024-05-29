@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>스타일, 스크립트 사용법</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        /* CSS를 HTML 내부에 적용하기 */
+
+        h1 { /* 모든 h1에 적용된다. */
+            color : white; /* 글자색 */
+            background-color : blue; /* 배경 색 */
+        }
+    </style>
+    <!-- style 구문이 작성하다 보면 너무 커지는 문제가 발생한다. 
+         그래서 분할이 필요 : link 구문 사용 -->
+    <link rel="stylesheet" type="text/css" media="screen" href="practice.css">
+    <script>
+        /* 주석 */
+        var name = prompt("이름을 입력하세요");
+        alert("나의 이름은" + name);
+    </script>
+    <script src="practice.js">
+
+    </script>
+</head>
+<body>
+    <h1>First heading 1</h1>
+    <h1>Second heading 1</h1>
+    <h2>First heading 2</h2>
+    <h2 style="color : black">Second heading 2</h2> <!-- link: 외부 스타일, 10행 : 내부 스타일, 현재 행: 인라인 스타일 -->
+</body>
+</html>
