@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* CSS 기본 문법
+            선택자 {키:값; 키:값; 키:값;}
+        */
+        h1 { color:white; 
+            background-color: greenyellow;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        h1, h2, li{
+            margin: 5px;
+            padding: 10px;
+        }
+
+        #header{
+            width : 600px; margin : 0 auto; /* margin : 0 aout; : 크기를 아무리 늘리던 줄이던 정 중앙에 위치하게 함*/
+            background-color: springgreen;
+        }
+
+        #section{
+            width : 600px; margin : 0 auto;
+            overflow: hidden; /* 내 사이즈가 600인데 자식 개체 사이즈가 600을 넘어가면 잘라버린다. */
+        }
+
+        #content {
+            width : 400px;
+            background-color: aquamarine;
+        }
+
+        #aside {
+            width: 200px; height: 100px;
+            float:right;
+            background-color: greenyellow;
+        }
+        .favorite {
+            color : coral;
+        }
+
+        .options {
+            background-color:black
+        }
+        /* 속성 선택자 */
+        input[type="text"] { background-color: red; }
+        input[type="password"] { background-color: blue; }
+        input[type="submit"] { background-color: yellow; }
+      
+        /* 후손 선택자 */
+        #header #h4{ color:purple;}
+        
+        /* 자손 선택자 */
+        #section > #content {font-style: italic;}
+
+        /* 반응 선택자 */
+        h1:hover {color:gray;} /* 마우스 올리면 색이 변경 */
+        h1:active {color:black;} /* 클릭시 색이 변경 */
+
+        /* 상태 선택자 */
+        input:disabled {background-color: navy;} /* disabled : 이용하지 못하게 막고 색을 변경 */
+
+        /* 구조 선택자 */
+        .second-nav > ul {overflow: hidden;}
+        .second-nav li {
+            list-style: none;
+            float: left; padding: 10px;
+        }
+        .second-nav li:first-child { /* 모서리 둥글게 */
+            border-radius: 10px 0 0 10px;
+        }
+        .second-nav li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .second-nav li:nth-child(2n+1){
+            background-color:cornflowerblue
+        }
+        .second-nav li:nth-child(2n){
+            background-color:lightcoral
+        }
+        .box{
+            width: 100px; height: 100px;
+            background-color: red;
+            border:20px dashed crimson;
+            /* 
+            - 위 한 줄로 아래 3줄을 대체할 수 있다.
+            border-width: 20px;
+            border-style: dashed;
+            border-color: crimson;
+            */
+            margin: 35px; padding: 30px;
+            border-radius: 10px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <p>- 제목과 뒷배경</p>
+    <h1>CSS Basic</h1>
+    <hr>    
+    <p>- 소제목과 글자색 변경</p>
+    <h2>Basic 문법</h2>
+    <hr>    
+    <div>
+        <ul>
+            <p>- 클래스 두 개의 결합 예시</p>
+            <li class="favorite options">기본 선택자</li>
+            <hr>
+            
+            <li>아이디, 클래스 선택자</li>
+            <li>속성 선택자</li>
+            <p>- 클래스 사용 예시</p>
+            <li class="favorite">후손 선택자</li>
+            <hr>
+        </ul>
+    </div>
+    <p>- 아이디와 클래스 사용 예시</p>
+    <div id="header">
+        <h3 class="favorite">#header 영역</h3>
+        <div id="nav">
+            <h4>Navigation 메뉴</h4>
+        </div>
+        <div>
+            <h4>옵션</h4>
+        </div>
+    </div>
+
+
+    <div id ="section">
+        <!-- 속성 id는 같은 값을 한 페이지에 두 개 넣으면 안된다. -->
+        <div id ="connect">
+            <h3>content 영역</h3>
+        </div>
+        <div id ="aside">
+            <h3>aside 영역</h3>
+            <ul>
+                <li>영한 소개</li>
+                <li>영한 컬럼</li>
+                <li>영한 프로젝트</li>
+            </ul>
+        </div>
+    </div>
+    <form>
+        <hr>
+        <p>속성 선택자 사용 예시</p>
+        <input type="text" disabled="disabled"><br>
+        <input type="password"><br>
+        <input type="submit"><br>
+        <hr>
+    </form>
+    <p>구조 선택자 사용 예시</p>
+    <div class="second-nav">
+        <ul>
+            <li><a href="#">첫번째 메뉴</a></li>
+            <li>두번째 메뉴</li>
+            <li>세번째 메뉴</li>
+            <li>네번째 메뉴</li>
+            <li>다섯번째 메뉴</li>
+            <li>여섯번째 메뉴</li>
+            <li>일곱번째 메뉴</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="box"></div>
+
+</body>
+</html>
