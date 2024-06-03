@@ -290,7 +290,14 @@ IoT 개발자 과정 ASP.NET 리포지토리
                 - 12를 넘어서면 디자인이 깨짐
             - containter 밑에 마치 table처럼 div를 구분해서 사용
             - container > row > col > div 태그에 클래스 정의
-
+        - 부트스트랩 학습에 시간을 들이는게 아님, Copyleft가 정석
+            - https://getbootstrap.com/docs/5.3/getting-started/introduction/
+            - https://getbootstrap.com/docs/5.3/examples/
+        - 무료 테마(템플릿)가 아주 잘 되어 있다.
+            - https://startbootstrap.com/
+    
+    - 웹페이지 클로닝
+        - https://picsum.photos/400/750 랜덤한 이미지를 출력
 
 ## 5일차 (2024-06-04)
 
