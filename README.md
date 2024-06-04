@@ -302,13 +302,13 @@ IoT 개발자 과정 ASP.NET 리포지토리
 ## 5일차 (2024-06-04)
 - HTML + CSS + js(jQuery) 응용
     - 웹페이지 클로닝
-        - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기(완료)
+        - 핀터레스트 타입 + 부트스트랩 웹페이지 만들기 (완료)
 
 
 https://github.com/c9yu/basic-aspnet-2024/assets/158007438/3e1e95ec-95fd-4092-9d88-dd196f05ca5e
 
-- Codehal 유튜버 로그인 웹페이지 튜토리얼 따라하기
-    - 
+- Codehal 유튜버 로그인 웹페이지 튜토리얼 따라하기 (완료)
+    - ![로그인웹페이지]https://raw.githubusercontent.com/c9yu/basic-aspnet-2024/main/day05/images/html001.png
 
 
 
