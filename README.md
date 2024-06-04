@@ -307,6 +307,9 @@ IoT 개발자 과정 ASP.NET 리포지토리
 
 https://github.com/c9yu/basic-aspnet-2024/assets/158007438/3e1e95ec-95fd-4092-9d88-dd196f05ca5e
 
+- Codehal 유튜버 로그인 웹페이지 튜토리얼 따라하기
+    - 
+
 
 
 

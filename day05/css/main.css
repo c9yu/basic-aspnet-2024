@@ -1,0 +1,166 @@
+/* 구글 폰트 중 Ubuntu 폰트 적용 */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body { /* 로그인 칸 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: seagreen; */
+    background-image: url('../images/back2.jpg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center; /* 창 크기가 커져도 정중앙에 위치 */
+}
+
+.wrapper {
+    width: 420px;
+    /* background-color: purple; */
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    color: white; /* 글자 색 */
+    border-radius: 10px; /*d 테두리 라운딩 */
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center; /* Login을 가운데로 */
+}
+
+.wrapper .input-box {
+    position: relative; /* input-box 내에 있는 객체들은 위치를 상대값으로 사용, 아이콘이 로그인 칸 안으로 들어오게함 */
+    width: 100%;
+    height: 50px;
+    /* background-color: salmon; */
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%; height: 100%; /* inputbox 크기 조정 */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* 박스 안에서 아이콘 위치 조정 */
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between; /* 양쪽 맞춤 */
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline; /* 마우스 갖다대면 줄생김 */
+}
+
+.wrapper .btn {
+    width: 100%; height: 45px;
+    background-color: white;
+    border: none; outline: none; /* 윤곽 없애기 */
+    border-radius: 40px; /* Login 창을 둥글게 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center; 
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* 폰트 내용은 무시 */
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+    .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+    .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+    .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+    .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+    .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+    .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
