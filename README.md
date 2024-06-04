@@ -313,6 +313,8 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/3e1e95ec-95fd-4092-9d
 ![로그인 웹페이지](https://raw.githubusercontent.com/c9yu/basic-aspnet-2024/main/day05/images/html001.png)
 
 
+- Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기
+
 
 
 ## 6일차 (2024-06-05)
