@@ -318,7 +318,9 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/3e1e95ec-95fd-4092-9d
 
 
 ## 6일차 (2024-06-05)
-
+- HTML + CSS + js(jQuery) 응용
+    - 웹페이지 클로닝
+        - Codehal 슬라이더 애니메이션 웹페이지 튜토리얼 따라하기
 
 ## 7일차 (2024-06-06)
 
