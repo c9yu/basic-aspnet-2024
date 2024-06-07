@@ -332,7 +332,7 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/a6ef3102-27af-450b-aa
 ## 7일차 (2024-06-06)
 
 
-https://github.com/c9yu/basic-aspnet-2024/assets/158007438/9db4e0a1-f4ef-40ee-96b7-9f1faf016026
+https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-abe1-55aa09c0c4ec
 
 
 - 접속시 출력되는 이미지를 0.png ~ 8.png까지 총 9장으로 분할하여 스크롤에 따라 각각 움직이게 해 동적인 모습을 연출한다.
