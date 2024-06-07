@@ -326,9 +326,11 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/3e1e95ec-95fd-4092-9d
 https://github.com/c9yu/basic-aspnet-2024/assets/158007438/a6ef3102-27af-450b-aa74-deb01f6fd4b8
 
 
-
-
 ## 7일차 (2024-06-06)
+
+
+https://github.com/c9yu/basic-aspnet-2024/assets/158007438/9db4e0a1-f4ef-40ee-96b7-9f1faf016026
+
 
 
 ## 8일차 (2024-06-07)
