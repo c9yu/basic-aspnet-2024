@@ -15,7 +15,7 @@ window.addEventListener("scroll", (event) => {
     titleBanner.style.transform = `translateY(${(top*4/2)}px)`;
 
     listTab.forEach(tab =>{
-        if(tab.offsetTop - top < 550){
+        if(tab.offsetTop - top < 900){
             tab.classList.add('active');
         }else{
             tab.classList.remove('active');

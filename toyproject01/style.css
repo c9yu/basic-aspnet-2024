@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body{
     margin :0;
     background-color: #210002;
     font-family: Poppins;
     font-size: 15px;
 }
+
 .banner{
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
+
 .banner .bg{
     position: absolute;
     left: 0;
@@ -20,33 +23,35 @@ body{
     background-position: center bottom;
     transition: 0.1s;
 }
+
 .banner .bg-1{
-    background-image: url('img/0.png');
+    background-image: url('./img/0.png');
 }
 .banner .bg-2{
-    background-image: url('img/1.png');
+    background-image: url('./img/1.png');
 }
 .banner .bg-3{
-    background-image: url('img/2.png');
+    background-image: url('./img/2.png');
 }
 .banner .bg-4{
-    background-image: url('img/3.png');
+    background-image: url('./img/3.png');
 }
 .banner .bg-5{
-    background-image: url('img/4.png');
+    background-image: url('./img/4.png');
 }
 .banner .bg-6{
-    background-image: url('img/5.png');
+    background-image: url('./img/5.png');
 }
 .banner .bg-7{
-    background-image: url('img/6.png');
+    background-image: url('./img/6.png');
 }
 .banner .bg-8{
-    background-image: url('img/7.png');
+    background-image: url('./img/7.png');
 }
 .banner .bg-9{
-    background-image: url('img/8.png');
+    background-image: url('./img/8.png');
 }
+
 .banner  h1{
     position: absolute;
     top: 20%;
@@ -55,8 +60,9 @@ body{
     text-align: center;
     font-size: 11rem;
     font-family: 'Pacifico', cursive;
-    color: #fff;
+    color: white;
 }
+
 .intro{
     min-height: 50vh;
     color: #eee;
@@ -65,16 +71,19 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .intro img{
     width: 130px;
     height: 130px;
     border-radius: 50%;
 }
+
 .intro p{
     width: 700px;
     max-width: 100%;
     text-align: center;
 }
+
 .intro button{
     background-color: #FD0003;
     padding: 10px 50px;
@@ -84,15 +93,18 @@ body{
     font-family: Poppins;
     font-weight: 500;
 }
-.animation-show{
+
+.animation-show {
     transform: translateY(50px);
     opacity: 0;
     transition: 0.7s;
 }
+
 .active .animation-show{
     transform: translateY(0);
     opacity: 1;
 }
+
 .animation-show:nth-child(2){
     transition-delay: 0.3s;
 }
@@ -102,18 +114,21 @@ body{
 .animation-show:nth-child(4){
     transition-delay: 0.9s;
 }
-.library{
+
+.library {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     color: #fff;
 }
+
 .library img{
     width: 90%;
-    height: 500px;
+    height: 90%; /* 원래값 height: 500px 사용하면 애니메이션 app.js listTab.forEach(tab =>{ 와 충돌발생. */
     object-fit: cover;
 }
+
 @media screen and (max-width: 768px){
     .banner h1{
         font-size: 5rem;
@@ -122,6 +137,6 @@ body{
         grid-template-columns: repeat(2, 1fr);
     }
     .library img{
-        height: 300px;
+        height: 60%;
     }
 }
