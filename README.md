@@ -339,7 +339,7 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
 - 하단에 9.png ~ 12.png까지 총 4장의 이미지를 순차적으로 나타나고, 사라지게 한다
 - 미술관 혹은 전시의 소개 화면 및 팜플렛으로 적합
 
-## 9일차 (2024-06-10)
+## 8일차 (2024-06-10)
 - ASP.NET
     - 1990년대 MS가 웹 서버기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
     - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
@@ -382,3 +382,48 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
         - 현재 기본적인 웹개발의 표준
         - Java 계열도 Spring (Boot) MVC로 개발
         - MVC 개념도    
+
+        <img src="https://raw.githubusercontent.com/c9yu/basic-aspnet-2024/main/day09/imgs/img001.png" width="730">
+
+        - 프론트엔드가 예전엔 스파게티 코드가 많이 심했다면, 현재는 스파게티 코드가 최소화 되어 있음. (SpringBoot, Python 모두 동일)
+        - IIS Express Server - VS에서 ASP.NET 웹사이트를 운영하는 개발용 웹서버 이름
+        - index * : 웹사이트의 가장 대문이 되는 페이지 이름
+        - 파일 저장시 HotReload 체크
+        - 0로 시작하는 C# 구문. Tag helper, Html helper로 HTML 구문 내에 C# 코드를 적어서 활용하는 방법 = Razor 구문
+        - Action : HTML에서 form 태그 내의 submit 버튼 클릭! / 링크를 클릭하는 것, 윈앱에서 이벤트와 동일
+        - 액션이 발생한 이후 처리하는 메서드의 결과를 ActionResult라고 한다.
+        
+    - 데이터베이스 연동 방법
+        - DB first : 가장 전통적인 DB 연동 방식, DB 설계, DB 구축, C#과 연동
+        - Code first : 최근 트렌드가 되는 DB 연동 방식, C#클래스 작성, DB 연결 설정 후 실행하면 DB에 테이블이 생성.
+        - EntityFramword를 사용하면 아주 손쉽게 구축 가능
+
+    - EntityFramwork(Core) 
+        - Microsoft.EntityFrameworkCore
+        - Microsoft.EntityFrameworkCore.Tools
+        - Microsoft.EntityFrameworkCore.SqlServer
+
+    - Code first 구현 순서
+        - ASP.NET 프로젝트 생성
+        - EF 패키지 설치
+        - 엔티티 클래스 작성
+        - appsettings.json에 DB 연결 문자열 추가
+        - Data/ApplicationDbContext.cs 중간연결 클래스 생성
+        - Program.cs Services 내에 DbContext 종속성을 주입
+        - NuGet 패키지 관리자 > 패키지 관리자 콘솔 실행
+        ```shell
+         PM> add-migration 마이그레이션명
+        Build started...
+        Build succeeded.
+        ...
+        PM> Update-Database
+        ...
+        Done.
+        ```
+
+## 9일차(2024-07-22)
+- ASP.NET Core MVC
+    - 필요 이론
+    - 연습
+    - 개인 포트폴리오 웹사이트 만들기
+    - Bootstrap 테마 적용
