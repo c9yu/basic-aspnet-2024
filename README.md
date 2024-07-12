@@ -424,7 +424,7 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
 ## 9일차(2024-06-07)
 
 
-![sun_rays](https://github.com/user-attachments/assets/de20bbec-fddb-4968-aa1f-0e5289605625)
+https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
 
 
 - fog와 마운틴 등의 이미지를 배치하여 마우스의 위치에 따라 각각의 이미지가 움직이게 연출하여 3D의 형태로 연출한다.
