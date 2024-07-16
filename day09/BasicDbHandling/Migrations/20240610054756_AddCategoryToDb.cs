@@ -1,4 +1,7 @@
-﻿using System;
+﻿// 예전에 만들어 둔 파일인데 삭제하지 않고 20240716 파일을 만들어서
+// 20240716 파일 내부에 작성이 정상적으로 생성 되지않음
+
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable

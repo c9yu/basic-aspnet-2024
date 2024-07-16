@@ -28,9 +28,12 @@ IoT 개발자 과정 ASP.NET 리포지토리
 
 - 웹 : 웹은 요청에 대한 응답을 의미한다.
 
-- 개발
+- 웹 개발
     - 프론트 엔드 전부 + 벡엔드 여러개 중 하나 + DB
-    - 웹 브라우저에서 F12(개발자 도구)
+    - 웹 브라우저에서 F12(개발자 도구) 활용
+    - VS Code 플러그 인 - 프론트 엔드를 위한 것
+        - HTML Code snippet
+        - Live Server
 
 - HTML5
     - 기본 용어
@@ -339,31 +342,48 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
 - 하단에 9.png ~ 12.png까지 총 4장의 이미지를 순차적으로 나타나고, 사라지게 한다
 - 미술관 혹은 전시의 소개 화면 및 팜플렛으로 적합
 
-## 8일차 (2024-06-10)
+## 8일차(2024-06-07)
+
+
+https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
+
+
+- fog와 마운틴 등의 이미지를 배치하여 마우스의 위치에 따라 각각의 이미지가 움직이게 연출하여 3D의 형태로 연출한다.
+- 여행지의 관광 홍보 사이트 혹은 미디어 아트에 적합
+
+
+## 9일차 (2024-06-10)
 - ASP.NET
-    - 1990년대 MS가 웹 서버기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
-    - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
-    - 스파게티 코드 : HTML + CSS + javascript + VBscript 짬뽕으로 만든 웹페이지
-        - 유지보수가 어렵다.
-        - 성능이 나쁘다.
+    - ASP.NET의 역사
+        - 1990년대 MS가 웹 서버기술로 ASP(Active Server Page)를 배포. like JSP(Java Server Page)
+        - ASP는 .NET으로 된 언어가 아닌, VBScript를 사용. 확장자(.asp)
+        - 스파게티 코드 : HTML + CSS + javascript + VBscript 짬뽕으로 만든 웹페이지
+            - 유지보수가 어렵다.
+            - 성능이 나쁘다.
+            - 프론트엔드 + 백엔드 소스가 모두 한페이지에
+            - 다만, 현재 프론트엔드도 백엔드 소스가 일부는 포함되어 있음
 
-    - 2000년대에 들어서면서 MS가 .NET을 발표함
-    - C#v VB.NET, C++.NET 등의 새로운 언어를 배포, 여기에 맞춰서 웹 서버기술을 다시 만들게 됐다 -> ASP.NET
-    - 초창기에는 스파게티 코드를 거의 그대로 사용, 성능이 안좋음
-    - 가장 큰 장점은 윈폼 개발하는 것처럼 웹개발을 할 수 있었다
-    - 2009년 ASP.NET MVC(Model View Controller 디자인패턴) 공표. 성능은 좋아짐
-        - 하지만 윈도우에서만 동작
+        - 웹퍼블리시 - HTML, CSS, Javascript만 가지고 웹페이지만 개발
+        - 프론트엔드 개발자 - 웹퍼블리시가 만든 웹페이지에 백엔드와 연계를 해서 실제 동작하는 페이지 개발
 
-    - 모든 OS 플랫폼에서 동작할 수 있는 .NET Core를 재출시
-    - 거기에 웹 서버기술을 또 다시 만듦 -> ASP.NET Core
+        - 2000년대에 들어서면서 MS가 .NET을 발표함
+        - C#v VB.NET, C++.NET 등의 새로운 언어를 배포, 여기에 맞춰서 웹 서버기술을 다시 만들게 됐다 -> ASP.NET
+        - 초창기에는 스파게티 코드를 거의 그대로 사용, 성능이 안좋음
+        - 가장 큰 장점은 윈폼 개발하는 것처럼 웹개발을 할 수 있었다
+        - 2009년 ASP.NET MVC(Model View Controller 디자인패턴) 공표. 성능은 좋아짐
+            - 하지만 윈도우에서만 동작
 
-    - .NET Core(현재는 .NET 9.0, Core라는 이름은 사용안함)의 장점
-        - 빠르고 오픈소스
-        - 크로스 플랫폼, OS에 종속받지 않음
-        - 성능!
+        - 2016년 모든 OS 플랫폼에서 동작할 수 있는 .NET Core를 재출시
+        - 거기에 웹 서버기술을 또 다시 만듦 -> ASP.NET Core
+        - ASP.NET C3이 아닌 다른 .NET 언어로도 개발가능. 그 중에서 C#을 사용
+
+        - .NET Core(현재는 .NET 9.0, Core라는 이름은 사용안함)의 장점
+            - 빠르고 오픈소스
+            - 크로스 플랫폼, OS에 종속받지 않음
+            - 성능!
 
     - ASP.NET 종류
-        - ASP.NET Webforms - 2000년도 초반에 나오다가 사장된 웹사이트 개발기술
+        - ~~ASP.NET Webforms - 2000년도 초반에 나오다가 사장된 웹사이트 개발기술~~
         - **ASP.NET Core 웹 API - 데이터포털, 네이버, 카카오, 영화 API 사이트를 만드는 백엔드(프론트엔드가 없어서 화면이 없음)**
         - **ASP.NET Core 웹앱(MVC) - 가장 기본적인 프론트엔드(HTML, CSS, html) + 백엔드(C# .aspx.cs) 웹개발**
         - Js(Vue, Angular, React) 프론트엔드 + ASP.NET Core 백엔드
@@ -403,6 +423,9 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
         - Microsoft.EntityFrameworkCore.Tools
         - Microsoft.EntityFrameworkCore.SqlServer
 
+    - Code first 특징
+        - Db를 별도로 만들 필요가 없이 사용 가능
+
     - Code first 구현 순서
         - ASP.NET 프로젝트 생성
         - EF 패키지 설치
@@ -412,7 +435,7 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
         - Program.cs Services 내에 DbContext 종속성을 주입
         - NuGet 패키지 관리자 > 패키지 관리자 콘솔 실행
         ```shell
-         PM> add-migration 마이그레이션명
+         PM> add-migration 사용할 마이그레이션명
         Build started...
         Build succeeded.
         ...
@@ -421,11 +444,25 @@ https://github.com/c9yu/basic-aspnet-2024/assets/158007438/29956395-fac1-4341-ab
         Done.
         ```
 
-## 9일차(2024-06-07)
+    - 만약 브라우저 실행시 NET::ERR_CERT_INVALID 연결 비공개 설정이 안되 화면이 안나타나는 경우
+    - 브라우저 화면 클릭, thisisunsafe 입력 엔터
 
+## 10일차 (2024-07-16)
+- ASP.NET Core MVC
+    - MVC 리뷰
+        - Model은 개발자가 따로 만듦
+        - View, Controller 폴더는 미리 만들어짐
+        - 웹브라우저에서 접근할 페이지를 만들려면
+            1. 해당 컨트롤러를 생성
+            2. 뷰를 같이 생성할지 나중에 따로 만들지 선택
+            3. 컨트롤러 이름과 동일한 뷰 폴더, 메서드 이름과 동일한 cshtml 페이지가 생성
+            4. 컨트롤러에 모델에 DB와 연결될 내용을 작성
+            5. 모델내용을 뷰로 리턴
 
-https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
-
-
-- fog와 마운틴 등의 이미지를 배치하여 마우스의 위치에 따라 각각의 이미지가 움직이게 연출하여 3D의 형태로 연출한다.
-- 여행지의 관광 홍보 사이트 혹은 미디어 아트에 적합
+- ASP.NET Core 개인 포트폴리오 웹사이트, MyPortfolio
+    1. Visual Studio에서 ASP.NET Core 웹앱(MVC) 프로젝트 생성
+    2. 부트스트랩 템플릿 사이트, 알맞은 템플릿 다운로드
+    3. wwwroot 폴더 밑에 템플릿 html, css, js, 이미지 등 위치
+    4. 템플릿 페이지의 공통적인 부분(Header, Bottom) _layout.cshtml에 위치
+    5. 그 외 나머지 : 중간에 페이지마다 변경되는 부분은 각 Views 밑에 포함시켜 준다.
+    6. 

@@ -9,8 +9,9 @@ namespace BasicDbHandling.Models
     /// </summary>
     public class Category
     {
-        [Key] // PK
+        [Key] // PK 
         public int Id { get; set; }
+
         [Required] // Not NULL
         public string Name { get; set; }
         public int DisplayOreder { get; set; }
