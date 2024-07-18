@@ -447,6 +447,8 @@ https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
     - 만약 브라우저 실행시 NET::ERR_CERT_INVALID 연결 비공개 설정이 안되 화면이 안나타나는 경우
     - 브라우저 화면 클릭, thisisunsafe 입력 엔터
 
+
+
 ## 10일차 (2024-07-16)
 - ASP.NET Core MVC
     - MVC 리뷰
@@ -459,10 +461,48 @@ https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
             4. 컨트롤러에 모델에 DB와 연결될 내용을 작성
             5. 모델내용을 뷰로 리턴
 
-- ASP.NET Core 개인 포트폴리오 웹사이트, MyPortfolio
+- ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
     1. Visual Studio에서 ASP.NET Core 웹앱(MVC) 프로젝트 생성
     2. 부트스트랩 템플릿 사이트, 알맞은 템플릿 다운로드
     3. wwwroot 폴더 밑에 템플릿 html, css, js, 이미지 등 위치
-    4. 템플릿 페이지의 공통적인 부분(Header, Bottom) _layout.cshtml에 위치
-    5. 그 외 나머지 : 중간에 페이지마다 변경되는 부분은 각 Views 밑에 포함시켜 준다.
-    6. 
+    4. 템플릿 페이지에 공통적인 부분(Header, Bottom)은 _layout.cshtml에 위치
+    5. 중간에 페이지마다 변경되는 부분은 각 Views 밑에 포함
+    6. _layout.cshtml에 공통부분 옮기기
+    7. Index.cshtml에서 공통부분 외 영역 옮기기
+    8. Index.cshtml 내용 수정
+    9. ResumeController.cs 생성, DB 관련 설정이 없으면 모델,뷰를 만들기 어려움
+    10. Resume란 폴더가 Views 아래에 만듦 Index.cshtml
+    11. resume.html에 네비게이션 아래 변경 부분만 복사해서 Index.cshtml에 붙여넣기
+    12. Project, Contact도 동일하게 적용
+    13. Code First 방식으로 Board 테이블 생성
+    14. NiGet 패키지에서 Microsoft.EntityFrameworkCore 패키지 검색, 설치
+    15. Microsoft.EntityFrameworkCore.Tools 검색, 설치
+    16. Microsoft.EntityFrameworkCore.SqlServer 검색, 설치
+    17. Models/Board.cs로 엔티티 클래스 생성
+    18. appsettings.json에 DB 연결문자열 추가
+    19. Data/ApplDbContext.cs 생성
+    20. Program.cs에 DbContext 종속성 주입
+    21. NuGet패키지 관리자 콘솔 > Add-Migration, Update-Database 진행
+    22. _Layout.cshtml Board 링크 수정
+    23. /Controller/BoardController.cs를 생성(모델, 뷰 연결)
+        - Entity Framework를 사용하며 뷰가 포함된 MVC컨트롤러
+        - BoardsController가 아닌 BoardController s가 빠져야 함
+
+        <img src="https://raw.githubusercontent.com/Hwangji99/basic-aspnet-2024/main/images/an0004.png" width="730">
+
+## 11일차(2024-07-18)
+- ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
+    1. Board.cs 멤버속성 ModeDate -> ModDate
+        - BoardController.cs에서 ModeDate -> ModDate변경
+        - views/Board/*.cshtml ModeDate -> ModDate변경
+    2. ASP.NET Core 템플릿으로 만들어주는 CRUD(Insert, Select, Update, Delete)
+    2. 테이블 삭제, 재생성
+    3. 게시판 관련된 화면 수정 작업
+    4. 페이징(1페이지, 2페이지 이런걸 만드는 것)
+    5. 회원가입, 로그인
+    6. 관리자모드/페이지
+    
+- 참고
+    - 폰트는 구글 font를 활용
+    - 아이콘은 bootstrap icon 활용
+

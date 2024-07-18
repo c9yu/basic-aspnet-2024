@@ -22,7 +22,7 @@ namespace MyPortfolio.Controllers
         // GET: Board
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Boards.ToListAsync());
+            return View(await _context.Board.ToListAsync());
         }
 
         // GET: Board/Details/5
@@ -33,7 +33,7 @@ namespace MyPortfolio.Controllers
                 return NotFound();
             }
 
-            var board = await _context.Boards
+            var board = await _context.Board
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (board == null)
             {
@@ -73,7 +73,7 @@ namespace MyPortfolio.Controllers
                 return NotFound();
             }
 
-            var board = await _context.Boards.FindAsync(id);
+            var board = await _context.Board.FindAsync(id);
             if (board == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace MyPortfolio.Controllers
                 return NotFound();
             }
 
-            var board = await _context.Boards
+            var board = await _context.Board
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (board == null)
             {
@@ -139,11 +139,11 @@ namespace MyPortfolio.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var board = await _context.Boards.FindAsync(id);
+            var board = await _context.Board.FindAsync(id);
             if (board != null)
             {
-                _context.Boards.Remove(board);
-            }
+                _context.Board.Remove(board);
+            }   
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -151,7 +151,7 @@ namespace MyPortfolio.Controllers
 
         private bool BoardExists(int id)
         {
-            return _context.Boards.Any(e => e.Id == id);
+            return _context.Board.Any(e => e.Id == id);
         }
     }
 }
