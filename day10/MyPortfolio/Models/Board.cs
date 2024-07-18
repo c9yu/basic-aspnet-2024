@@ -24,6 +24,6 @@ namespace MyPortfolio.Models
 
         public DateTime RegDate { get; set; } = DateTime.Now; // 게시글 작성일자
 
-        public DateTime ModeDate { get; set; } // 게시글 최종 수정일자
+        public DateTime ModDate { get; set; } // 게시글 최종 수정일자
     }
 }
