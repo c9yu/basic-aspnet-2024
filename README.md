@@ -488,7 +488,7 @@ https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
         - Entity Framework를 사용하며 뷰가 포함된 MVC컨트롤러
         - BoardsController가 아닌 BoardController s가 빠져야 함
 
-        <img src="https://raw.githubusercontent.com/Hwangji99/basic-aspnet-2024/main/images/an0004.png" width="730">
+        <img src="https://raw.githubusercontent.com/c9yu/basic-aspnet-2024/main/day10/MyPortfolio/img/img001.png" width="730">
 
 ## 11일차(2024-07-18)
 - ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
@@ -501,7 +501,7 @@ https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
     4. 페이징(1페이지, 2페이지 이런걸 만드는 것)
     5. 회원가입, 로그인
     6. 관리자모드/페이지
-    
+
 - 참고
     - 폰트는 구글 font를 활용
     - 아이콘은 bootstrap icon 활용
