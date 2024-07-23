@@ -498,7 +498,14 @@ https://github.com/user-attachments/assets/50de2912-3e92-4abc-ab0d-f4f57827f1c1
     2. ASP.NET Core 템플릿으로 만들어주는 CRUD(Insert, Select, Update, Delete)
     2. 테이블 삭제, 재생성
     3. 게시판 관련된 화면 수정 작업
+
     4. 페이징(1페이지, 2페이지 이런걸 만드는 것)
+        - Views/Board/Index.cshtml 게시판 리스트화면 수정
+        - Index.cshtml 테이블 틀 변경, 삭제, 수정, 상세버튼 삭제
+        - Models/Board.cs에 테이블 한글이름 추가 DisplayName()
+        - Views/Board/Details.cshtml 부트스트랩 적용
+        - 수정, 삭제 등 버튼 디자인적용
+
     5. 회원가입, 로그인
     6. 관리자모드/페이지
 
