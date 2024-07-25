@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyPortfolio.Data;
+using Westwind.AspNetCore.Markdown; // 마크다운 패키지 추가
 
 namespace MyPortfolio
 {
@@ -16,6 +17,17 @@ namespace MyPortfolio
                 builder.Configuration.GetConnectionString("MyConnection")
                 ));
 
+            // 로그인 세션 설정
+            builder.Services.AddSession(options =>
+            {
+                options.Cookie.Name = "Hwangji99 PortfolioSession"; // 웹앱 세션 쿠키 이름
+                options.IdleTimeout = TimeSpan.FromMinutes(20); // 세션지속시간 20~30분이 적당
+            }).AddControllersWithViews(); // 세션의 내용을 cshtml에도 적용한다
+
+            // MarkDown 관련 설정
+            builder.Services.AddMarkdown();
+            builder.Services.AddMvc().AddApplicationPart(typeof(MarkdownPageProcessorMiddleware).Assembly);
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -26,11 +38,12 @@ namespace MyPortfolio
                 app.UseHsts();
             }
 
+            app.UseMarkdown();  // 마크다운 사용설정
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();   // 세션사용
             app.UseAuthorization();
 
             app.MapControllerRoute(
